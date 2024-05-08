@@ -22,6 +22,7 @@ class _CorazonState extends State<CorazonView> {
     height = MediaQuery.of(context).size.height;
   }
 
+  
   double x1 = 0;
   double y1 = 0;
 
@@ -139,6 +140,7 @@ class HeartPainter extends CustomPainter {
          (pi)+.6
       )
       ..moveTo(x , y + 30 * scale )
+      ..moveTo(x , y + 30 * scale )
       ..cubicTo(
         x , y + 30 * scale, // Primer punto de control
         x - 7*scale, y + 5 *scale +30, // Segundo punto de control
@@ -155,32 +157,6 @@ class HeartPainter extends CustomPainter {
         x + 17*scale, y - 5 *scale +30, // Segundo punto de control
         x + 35 * scale, y - 6.6 * scale, // Punto final
       );
-      // ..addArc(
-      //   Rect.fromCircle(center: Offset(x - 20 * scale, y - 20 * scale),radius: 20 * scale), 
-      //    2.39, 
-      //    (pi)+.6
-      // )
-      // ..addArc(
-      //   Rect.fromCircle(center: Offset(x + 20 * scale, y - 20 * scale),radius: 20 * scale), 
-      //    3.3, 
-      //    (pi)+.6
-      // )
-      // ..moveTo(x , y + 30 * scale)
-      // ..lineTo(x + 35 * scale, y - 6.6 * scale,)
-      // ..lineTo(x - 35 * scale, y + 5* scale - 35);
-
-      // Path path_0 = Path();
-      // path_0.moveTo(scaledWidth*0.1666000,scaledHeight*0.3316333);
-      // path_0.quadraticBezierTo(scaledWidth*0.1854000,scaledHeight*0.1760333,scaledWidth*0.3384333,scaledHeight*0.1836667);
-      // path_0.quadraticBezierTo(scaledWidth*0.4566000,scaledHeight*0.1913333,scaledWidth*0.5000000,scaledHeight*0.3333333);
-      // path_0.quadraticBezierTo(scaledWidth*0.5587000,scaledHeight*0.1581333,scaledWidth*0.6989667,scaledHeight*0.1836000);
-      // path_0.quadraticBezierTo(scaledWidth*0.8222333,scaledHeight*0.1955333,scaledWidth*0.8384333,scaledHeight*0.3316333);
-      // path_0.quadraticBezierTo(scaledWidth*0.8425000,scaledHeight*0.4402000,scaledWidth*0.8002000,scaledHeight*0.4911333);
-      // path_0.quadraticBezierTo(scaledWidth*0.7183333,scaledHeight*0.5758333,scaledWidth*0.5000000,scaledHeight*0.8197333);
-      // path_0.quadraticBezierTo(scaledWidth*0.2857000,scaledHeight*0.5748333,scaledWidth*0.2108667,scaledHeight*0.4915000);
-      // path_0.quadraticBezierTo(scaledWidth*0.1590000,scaledHeight*0.4277333,scaledWidth*0.1666000,scaledHeight*0.3316333);
-      // path_0.close();
-
     canvas.drawPath(path, pencil);
   }
 
