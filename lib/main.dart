@@ -1,6 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:prueba/Animations/AnimatedList/animated_list1.dart';
+import 'package:prueba/Animations/MouseRegion/view_animation.dart';
 import 'package:prueba/Animations/PruebasShape/shape2.dart';
 import 'package:prueba/Animations/hoover.dart';
 import 'package:prueba/Cordenadas/Views/cordenadas_view.dart';
@@ -30,7 +32,9 @@ class MyApp extends StatelessWidget {
       // home: const PdfView(),
       // home: const CorazonView(),
       // home: const Hoover(),
-      home: const Shape2()
+      // home: const Shape2()
+      // home: const AnimatedList1()
+      home: const ViewAnimation()
     );
   }
 }
